@@ -1,0 +1,20 @@
+{
+  "name": "netglyph",
+  "version": "0.0.1",
+  "description": "A static blog generator.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://polybuildr@github.com/polybuildr/netglyph.git"
+  },
+  "keywords": [
+    "blog",
+    "static"
+  ],
+  "author": "Vivek Ghaisas <v.a.ghaisas@gmail.com>",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/polybuildr/netglyph/issues"
+  },
+  "homepage": "https://github.com/polybuildr/netglyph#readme"
+}
