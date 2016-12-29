@@ -8,6 +8,7 @@
     {{#each posts}}
         <section>
             <h1><a href="./{{ this.slug }}">{{ this.title }}</a></h1>
+            <p>{{ this.prettyDate }}</p>
             {{{ this.content }}}
             <hr>
         </section>
