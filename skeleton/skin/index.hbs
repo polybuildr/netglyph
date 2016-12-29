@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ blog.name }}</title>
+    </head>
+    <body>
+    {{#each posts}}
+        <section>
+            <h1><a href="./{{ this.slug }}">{{ this.title }}</a></h1>
+            {{{ this.content }}}
+            <hr>
+        </section>
+    {{else}}
+        <p>No posts here yet, please come back later!</p>
+    {{/each}}
+</ul>
+    </body>
+</html>
