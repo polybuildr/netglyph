@@ -6,7 +6,8 @@
     </head>
     <body>
         <h1>{{ post.title }}</h1>
-        <p>{{ this.prettyDate }}</p>
+        <div>{{ this.prettyDate }}</div>
+        <div>{{#each post.tags}}<span>#{{this}}</span> {{/each}}</div>
         {{{ post.content }}}
     </body>
 </html>
