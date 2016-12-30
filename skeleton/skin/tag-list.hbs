@@ -2,15 +2,15 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>{{ blog.name }}</title>
+        <title>Posts tagged #{{tag}} · {{ blog.name }}</title>
     </head>
     <body>
-        <h1>{{ blog.name }}</h1>
+        <h1>Posts tagged #{{tag}} · {{ blog.name }}</h1>
         {{#each posts}}
             <section>
-                <h1><a href="./{{ this.slug }}">{{ this.title }}</a></h1>
+                <h1><a href="../../{{ this.slug }}">{{ this.title }}</a></h1>
                 <div>{{ this.prettyDate }}</div>
-                <div>{{#each this.tags}}<a href="./tag/{{this}}">#{{this}}</a> {{/each}}</div>
+                <div>{{#each this.tags}}<a href="../../tag/{{this}}">#{{this}}</a> {{/each}}</div>
                 {{{ this.content }}}
                 <hr>
             </section>

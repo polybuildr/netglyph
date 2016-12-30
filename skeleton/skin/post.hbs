@@ -7,7 +7,7 @@
     <body>
         <h1>{{ post.title }}</h1>
         <div>{{ this.prettyDate }}</div>
-        <div>{{#each post.tags}}<span>#{{this}}</span> {{/each}}</div>
+        <div>{{#each post.tags}}<a href="../tag/{{this}}">#{{this}}</a> {{/each}}</div>
         {{{ post.content }}}
     </body>
 </html>
