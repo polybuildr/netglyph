@@ -1,0 +1,165 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+    color: #444;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+@media (min-width: 58em) {
+    body {
+        font-size: 20px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .3em;
+    color: #333;
+}
+
+.post-title {
+    margin: 0;
+}
+
+.post-date {
+    color: #888;
+    margin-bottom: .4em;
+}
+
+.post-tag {
+    color: #666;
+    padding: 0.2em 0.5em;
+    background-color: #eee;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.post-content {
+    margin-bottom: 2em;
+}
+
+@media (min-width: 58em) {
+    .post-tag {
+        font-size: .8em;
+    }
+}
+
+.post-tag:hover {
+    background-color: #ddd;
+    color: #666;
+}
+
+a.post-tag:hover,
+a.post-tag:focus {
+    text-decoration: none;
+}
+
+a {
+    color: #268bd2;
+    text-decoration: none;
+}
+
+a strong {
+    color: inherit;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+.post-title a {
+    color: #333;
+}
+
+.sidebar {
+    text-align: center;
+    padding: 2em 1em;
+    color: rgba(255,255,255,.5);
+    background-color: #202020;
+}
+
+@media (min-width: 48em) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 18em;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.sidebar a {
+    color: #fff;
+}
+
+.sidebar-content h1 {
+    color: #fff;
+    margin-top: 0;
+}
+
+.description {
+    font-size: 1.3em;
+}
+
+.content {
+  padding-top:    2em;
+  padding-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 48em) {
+    .content {
+        margin-left: 20em;
+        margin-right: 2em;
+        padding-top: 2em;
+    }
+}
+
+@media (min-width: 64em) {
+    .content {
+        margin-left: 22em;
+        margin-right: 4em;
+        padding-top: 3em;
+    }
+}
+
+code {
+    padding: .25em .5em;
+    font-size: 85%;
+    color: #bf616a;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+blockquote {
+    margin: .8em 0;
+    padding: 1px 1.3em;
+    color: #666;
+    border-left: .35em solid #e5e5e5;
+}
+
+/* Can add additional themes here: */
+
+/* Red */
+.theme-red .sidebar {
+  background-color: #ac4142;
+}
+.theme-red .content a {
+  color: #ac4142;
+}

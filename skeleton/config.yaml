@@ -1,2 +1,2 @@
-name: Blog name
-author: Author name
+name: netGlyph demo
+description: A static blog generator written in Node.js by <a href="https://twitter.com/vghaisas">@vghaisas</a>.

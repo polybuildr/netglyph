@@ -4,11 +4,22 @@
         <meta charset="utf-8">
         <title>{{ post.title }} · {{ blog.name }}</title>
         <link rel="stylesheet" href="../public/css/normalize.css">
+        <link rel="stylesheet" href="../public/css/theme.css">
     </head>
     <body>
-        <h1>{{ post.title }}</h1>
-        <div>{{ this.prettyDate }}</div>
-        <div>{{#each post.tags}}<a href="../tag/{{this}}">#{{this}}</a> {{/each}}</div>
-        {{{ post.content }}}
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <h1><a href="../">{{{ blog.name }}}</a></h1>
+                <p class="description">{{{ blog.description }}}</p>
+            </div>
+        </div>
+        <div class="content container">
+            <h1 class="post-title">{{ post.title }}</h1>
+            <div class="post-date">{{ post.prettyDate }}</div>
+            <div>{{#each post.tags}}<a class="post-tag" href="../tag/{{this}}">#{{this}}</a> {{/each}}</div>
+            <div class="post-content">
+                {{{ post.content }}}
+            </div>
+        </div>
     </body>
 </html>

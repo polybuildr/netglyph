@@ -3,20 +3,31 @@
     <head>
         <meta charset="utf-8">
         <title>{{ blog.name }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./public/css/normalize.css">
+        <link rel="stylesheet" href="./public/css/theme.css">
     </head>
     <body>
-        <h1>{{ blog.name }}</h1>
-        {{#each posts}}
-            <section>
-                <h1><a href="./{{ this.slug }}">{{ this.title }}</a></h1>
-                <div>{{ this.prettyDate }}</div>
-                <div>{{#each this.tags}}<a href="./tag/{{this}}">#{{this}}</a> {{/each}}</div>
-                {{{ this.content }}}
-                <hr>
-            </section>
-        {{else}}
-            <p>No posts here yet, please come back later!</p>
-        {{/each}}
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <h1><a href="./">{{{ blog.name }}}</a></h1>
+                <p class="description">{{{ blog.description }}}</p>
+            </div>
+        </div>
+        <div class="content container">
+            {{#each posts}}
+                <section>
+                    <h1 class="post-title"><a href="./{{ this.slug }}">{{ this.title }}</a></h1>
+                    <div class="post-date">{{ this.prettyDate }}</div>
+                    <div>{{#each this.tags}}<a class="post-tag" href="./tag/{{this}}">#{{this}}</a> {{/each}}</div>
+                    <div class="post-content">
+                        {{{ this.content }}}
+                    </div>
+                    <hr>
+                </section>
+            {{else}}
+                <p>No posts here yet, please come back later!</p>
+            {{/each}}
+        </div>
     </body>
 </html>
