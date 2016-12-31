@@ -7,7 +7,8 @@ function printHelp() {
     console.log(`usage: netglyph <command>
 
 where command can be one of:
-setup     setup netglyph in this directory`);
+setup       setup netglyph in this directory
+generate    generate the output into the blog/ directory`);
     process.exit(1);
 }
 
