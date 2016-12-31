@@ -1,3 +1,4 @@
+'use strict';
 const process = require('process');
 
 const setup = require('./lib/setup');
