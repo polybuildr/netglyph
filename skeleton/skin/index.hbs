@@ -21,7 +21,12 @@
                     <div class="post-date">{{ this.prettyDate }}</div>
                     <div>{{#each this.tags}}<a class="post-tag" href="./tag/{{this}}">#{{this}}</a> {{/each}}</div>
                     <div class="post-content">
-                        {{{ this.content }}}
+                        {{#if this.preview}}
+                            {{{ this.preview }}}
+                            <p><a href="./{{ this.slug }}">Read more »</a></p>
+                        {{else}}
+                            {{{ this.content }}}
+                        {{/if}}
                     </div>
                     <hr>
                 </section>
