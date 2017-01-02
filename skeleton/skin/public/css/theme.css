@@ -127,7 +127,7 @@ a:focus {
     }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 72em) {
     .content {
         margin-left: 22em;
         margin-right: 4em;
